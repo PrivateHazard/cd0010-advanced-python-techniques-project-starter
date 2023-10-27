@@ -18,6 +18,13 @@ import unittest
 from extract import load_neos, load_approaches
 from database import NEODatabase
 
+import sys
+import os
+
+# Add the directory containing the extract module to the Python module search path
+module_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(module_dir, '..'))
+
 
 # Paths to the test data files.
 TESTS_ROOT = (pathlib.Path(__file__).parent).resolve()
