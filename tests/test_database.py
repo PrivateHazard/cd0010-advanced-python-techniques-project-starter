@@ -22,8 +22,7 @@ import sys
 import os
 
 # Add the directory containing the extract module to the Python module search path
-module_dir = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(module_dir, '..'))
+sys.path.insert(0, 'Work\Documents\Python\NEOs\cd0010-advanced-python-techniques-project-starter')
 
 
 # Paths to the test data files.
